@@ -34,3 +34,19 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: install dependencies
+        run: |
+          make install
+
+      - name lint
+        run: |
+          make lint
+
+      - name: test
+        run: |
+          make test
+
+      - name: format
+        run: |
+          make format
