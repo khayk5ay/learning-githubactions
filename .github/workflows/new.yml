@@ -40,7 +40,7 @@ jobs:
           make install
 
       - name: lint
-        run: 
+        run: |
           make lint
 
       - name: test
